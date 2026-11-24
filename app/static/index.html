@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consumos Hoteles</title>
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" type="image/png" href="/static/marcas/marca_icono.png">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="Secciones">
+    <div class="brand"><img class="brand-logo" src="/static/marcas/marca_azul.png" alt="Hoteles Demo"><div class="logo">Consumos</div><small>Agua · Electricidad · Gas</small></div>
+    <button data-route="inicio"><span class="ico">⌂</span>Inicio</button>
+    <div class="navlabel">Hoteles</div>
+    <div id="nav-hotels" style="display:contents"></div>
+    <div class="navlabel">Gestión</div>
+    <button data-route="cargar"><span class="ico">⇪</span>Cargar facturas<span class="badge" id="todo-badge" hidden></span></button>
+    <button data-route="alertas"><span class="ico">⏰</span>Alertas<span class="badge" id="alert-badge" hidden></span></button>
+    <button data-route="huespedes"><span class="ico">☷</span>Huéspedes</button>
+    <button data-route="comparar"><span class="ico">≋</span>Comparar hoteles</button>
+    <button data-route="informes"><span class="ico">⎙</span>Informes</button>
+    <button data-route="config"><span class="ico">⚙</span>Configuración</button>
+    <div class="spacer"></div>
+    <div class="foot" id="foot"></div>
+  </nav>
+  <main id="main"></main>
+</div>
+
+<dialog id="dlg"></dialog>
+<dialog id="ask" class="ask"></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/static/chart.umd.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

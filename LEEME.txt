@@ -1,0 +1,38 @@
+CONSUMOS HOTELES – Agua · Electricidad · Gas
+============================================
+
+CÓMO SE USA
+1. Abrir la carpeta "ConsumosHoteles" y hacer doble clic en ConsumosHoteles.exe.
+   Se abre una ventana negra (no cerrarla) y la aplicación en el navegador.
+2. "Cargar facturas": arrastrar los PDF de AySA, Edesur y MetroGAS (o carpetas enteras).
+   La app lee período, consumo e importe, detecta el hotel por el número de cuenta
+   y descarta duplicados y notas de débito informativas.
+3. "Huéspedes": cargar la cantidad de huéspedes de cada mes (o "Importar desde Excel").
+4. Inicio y página de cada hotel: consumo por huésped, mínimos, máximos, promedios.
+5. "Alertas": recordatorios propios con hotel, fecha límite y aviso de 2 a 7 días antes; botón "Resuelta".
+6. "Informes": armar el informe de cada hotel eligiendo qué lleva (secciones, gráficos,
+   números, textos, importes, servicios, comentario), con vista previa de todas las páginas.
+
+DATOS Y SEGURIDAD
+- Todo se guarda en la subcarpeta "datos" junto al programa (base de datos + copia de los PDF).
+- Cada día que se abre la app se hace un respaldo automático en "datos\respaldos" (se guardan los últimos 20).
+- Si la base de datos se daña (por ejemplo, un corte de luz), al abrir la app se recupera sola del último respaldo.
+- Configuración > Respaldo: copia automática diaria a Google Drive / OneDrive / pendrive
+  (base de los últimos 30 días + PDFs). También se puede descargar un .zip a mano.
+- Las facturas borradas van a la Papelera (90 días) y se pueden recuperar.
+- Las facturas que esperan hotel o no se pudieron leer quedan arriba en "Cargar facturas" aunque se cierre la app.
+- Si un número es muy distinto a lo habitual (huéspedes o consumo), la app pregunta antes de guardar.
+- Si algo falla, queda anotado en "datos\errores.log".
+- Si se abre el programa dos veces, no se duplica: abre la misma ventana.
+- Para pasar la app a otra computadora: copiar toda la carpeta "ConsumosHoteles".
+
+REGLAS DE CÁLCULO
+- Referencias UTGRA 2022: agua 0,23 m³ por huésped, electricidad 11,65 kWh por huésped
+  (se pueden cambiar en Configuración). Gas sin referencia.
+- Cada factura se reparte entre los meses según los días del período de lectura.
+- Las facturas de agua (bimestrales) llegan en 2 tramos: cada tramo suma la mitad.
+- Un mes es "parcial" si falta alguna factura que lo cubra; no entra en mín/máx/promedios.
+
+PARA DESARROLLADORES
+- Ejecutar sin compilar:  pip install -r requirements.txt  y  python run.py
+- Generar el .exe:        build.bat   (resultado en dist\ConsumosHoteles)

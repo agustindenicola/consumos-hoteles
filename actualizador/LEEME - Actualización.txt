@@ -1,0 +1,30 @@
+ACTUALIZACIÓN DE CONSUMOS HOTELES – noviembre 2026
+=================================================
+
+Hola. Para actualizar la aplicación:
+
+  1) Descomprimí este zip (clic derecho > "Extraer todo").
+
+  2) Hacé doble clic en "Actualizar Consumos Hoteles".
+     Se abre una ventana negra que hace todo sola:
+       - encuentra tu aplicación,
+       - la cierra si estaba abierta,
+       - guarda una copia de tus datos por las dudas,
+       - y pone el programa nuevo.
+     Al terminar, la aplicación se abre sola con todos tus datos.
+
+     Si Windows muestra "Windows protegió su PC":
+     clic en "Más información" y después en "Ejecutar de todas formas".
+
+  3) Después podés borrar esta carpeta de actualización.
+
+Tus facturas, huéspedes y configuración NO se tocan.
+
+QUÉ HAY DE NUEVO
+  - La marca Hoteles Demo en la aplicación y en todos los informes.
+  - Alertas: creás tus propios recordatorios con hotel, fecha límite y
+    desde cuántos días antes querés que te avise (de 2 días a 1 semana).
+    Están en el menú "Alertas" y en el Inicio.
+  - Se sacaron los avisos automáticos, los vencimientos y el precio por m³/kWh.
+
+Todo está explicado en la "Guía de uso - Consumos Hoteles.pdf".
